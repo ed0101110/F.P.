@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+
+}
+
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #43c6ac, #191654);
+  padding: 10px;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+
+.todo-app h2 {
+  color: #164fa9;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
+.todo-app h2 img {
+  width: 30px;
+  margin-left: 10px;
+
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="date"] {
+  margin-left: 1px;
+  padding: 10px;
+  width: 30%;
+  border: 1px solid #4caf50;
+  border-radius: 20px;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+  outline: none;
+}
+
+button {
+  margin-left: 2px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#list-container {
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul[data-date] {
+  margin-bottom: 30px;
+}
+
+h2 span.delete-list {
+  float: right;
+  color: #b2b2b2;
+  cursor: pointer;
+}
+
+ul li span:hover {
+  background: #faf8f7;
+}
+
+ul li {
+  position: relative;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+ul li.checked {
+  background-color: #d9d9d9;
+  text-decoration: line-through;
+}
+
+ul li span.delete-task {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  color: #555;
+  cursor: pointer;
+}
