@@ -18,6 +18,7 @@ function addTask() {
     createTask(list, inputValue);
   }
 
+  
   inputBox.value = "";
   saveData();
 }
